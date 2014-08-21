@@ -10,7 +10,8 @@ describe('guessNumber', function () {
     });
 
     it('it should be a num ',function() {
-        var generate = AnswerGenerate();
+        var answer = new AnswerGenerate();
+        var generate = answer.generate();
 
         result = true;
 
@@ -22,7 +23,8 @@ describe('guessNumber', function () {
     });
 
     it('lenght is 4 ',function() {
-        var generate = AnswerGenerate();
+        var answer = new AnswerGenerate();
+        var generate = answer.generate();
 
         result = true;
 
@@ -34,7 +36,8 @@ describe('guessNumber', function () {
     });
 
     it('the four number is different',function() {
-        var generate = AnswerGenerate();
+        var answer = new AnswerGenerate();
+        var generate = answer.generate();
 
         result = true;
 
@@ -55,9 +58,11 @@ describe('guessNumber', function () {
     });
 
     it('the number is random',function() {
-        var generate1 = AnswerGenerate();
+        var answer = new AnswerGenerate();
+        var generate1 = answer.generate();
 
-        var generate2 = AnswerGenerate();
+        var answer = new AnswerGenerate();
+        var generate2 = answer.generate();
 
         result = true;
 
