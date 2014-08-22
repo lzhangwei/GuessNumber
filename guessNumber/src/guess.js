@@ -2,12 +2,13 @@
  * Created by zhangwei on 14-8-21.
  */
 function Guess(answerGenerate,compareNumber){
-    this.answerGenerate = answerGenerate;
+    this.answer = answerGenerate.generate();
     this.compareNumber = compareNumber;
 }
 
 Guess.prototype.guess = function(input){
-    var answer = this.answerGenerate.generate();
-    var tips = this.compareNumber.compare(answer,input);
+
+    var tips = this.compareNumber.compare(this.answer,input);
+
     return tips;
 };
