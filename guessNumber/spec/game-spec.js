@@ -1,7 +1,7 @@
 /**
  * Created by zhangwei on 14-8-22.
  */
-describe('guessNumber', function () {
+describe('Game', function () {
 
     beforeEach(function () {
 

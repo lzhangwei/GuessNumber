@@ -1,7 +1,7 @@
 /**
  * Created by zhangwei on 14-8-21.
  */
-describe('guessNumber', function () {
+describe('AnswerGenerate', function () {
 
     var result;
 

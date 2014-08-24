@@ -1,4 +1,4 @@
-describe('guessNumber', function () {
+describe('CompareNumber', function () {
     var answer;
     var inputs;
 
