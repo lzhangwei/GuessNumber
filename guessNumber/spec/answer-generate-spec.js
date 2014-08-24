@@ -22,7 +22,7 @@ describe('guessNumber', function () {
         expect(result).toBe(true);
     });
 
-    it('lenght is 4 ',function() {
+    it('length is 4 ',function() {
         var answer = new AnswerGenerate();
         var generate = answer.generate();
 

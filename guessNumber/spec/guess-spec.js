@@ -26,7 +26,7 @@ describe('guessNumber', function () {
 
     });
 
-    it('it should called compare method',function() {
+    it('tracks that the compare was called',function() {
         spyOn(answerGenerate, 'generate').and.returnValue('1234');
         spyOn(compareNumber, 'compare');
 
@@ -34,6 +34,15 @@ describe('guessNumber', function () {
         guess.guess(input);
 
         expect(compareNumber.compare).toHaveBeenCalledWith('1234',input);
+    });
+
+    it('tracks that the generate was called',function() {
+        spyOn(answerGenerate, 'generate').and.returnValue('1234');
+
+        var guess = new Guess(answerGenerate,compareNumber);
+        guess.guess(input);
+
+        expect(answerGenerate.generate).toHaveBeenCalled();
     });
 
 });
