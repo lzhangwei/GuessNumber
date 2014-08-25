@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GuessNumber</title>
+    <link href="../lib/bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title text-center">Guess Number</h3>
+        </div>
+        <div class="panel-body text-center">
+
+            <label class="control-label">请填入四位数字:</label>
+            <div class="form-group form-inline">
+
+                <input class="form-control" type="text" id="inputs">
+                <input class="form-control" type="button" value="提交" id="submit">
+                <span id="prompt"></span>
+            </div>
+            <div class="form-group form-inline">
+                <input class="form-control" type="button" value="开始" id="start">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="../lib/jquery-1.11.1.min.js"></script>
+<script src="../lib/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="../lib/lodash-2.4.1/lodash.compat.js"></script>
+<script type="text/javascript" src="src/main.js"></script>
+<script type="text/javascript" src="src/answer-generate.js"></script>
+<script type="text/javascript" src="src/guess.js"></script>
+<script type="text/javascript" src="src/game.js"></script>
+<script type="text/javascript" src="gamestart.js"></script>
+
+</body>
+</html>
