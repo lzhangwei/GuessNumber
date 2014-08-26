@@ -10,32 +10,23 @@ describe('AnswerGenerate', function () {
     });
 
     it('it should be a num ',function() {
+
         var answer = new AnswerGenerate();
         var generate = answer.generate();
 
-        result = true;
-
-        if(/^d/.test(generate)){
-            result = false;
-        }
-
-        expect(result).toBe(true);
+        expect(generate).not.toMatch(/^d/);
     });
 
     it('length is 4 ',function() {
+
         var answer = new AnswerGenerate();
         var generate = answer.generate();
 
-        result = true;
-
-        if(generate.length !== 4){
-            result = false;
-        }
-
-        expect(result).toBe(true);
+        expect(generate.length).toBe(4);
     });
 
     it('the four number is different',function() {
+
         var answer = new AnswerGenerate();
         var generate = answer.generate();
 
@@ -58,19 +49,14 @@ describe('AnswerGenerate', function () {
     });
 
     it('the number is random',function() {
+
         var answer = new AnswerGenerate();
         var generate1 = answer.generate();
 
         var answer = new AnswerGenerate();
         var generate2 = answer.generate();
 
-        result = true;
-
-        if(generate1 === generate2){
-            result = false;
-        }
-
-        expect(result).toBe(true);
+        expect(generate1 !== generate2).toBe(true);
     });
 
 });
